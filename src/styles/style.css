@@ -45,13 +45,14 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    width: 360px;
 }
 
 .item {
     border-bottom: 1px solid rgba(0, 0, 0, 0.24);
     display: flex;
     justify-content: space-between;
-    width: 360px;
+
 }
 
 .summary h2 {
