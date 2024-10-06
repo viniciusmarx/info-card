@@ -14,7 +14,7 @@ body {
     height: 347px;
     background-color: #fff;
     display: flex;
-    border-radius: 20px;
+    border-radius: 30px;
     position: relative;
     align-items: center;
 }
@@ -39,6 +39,7 @@ body {
 .title {
     font-size: 30px;
     margin-bottom: 15px;
+    font-weight: bold;
 }
 
 .questions {

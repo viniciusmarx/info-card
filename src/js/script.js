@@ -4,9 +4,9 @@ let paragrafo = document.createElement("p");
 paragrafo.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis egestas ex, a elementum est. Mauris auctor nunc quis erat.";
 
 for (let i = 0; i < seta.length; i++) {
-	seta[i].addEventListener("click", (e) => {
-		if (e.target.classList.contains("open")) {
-			e.target.classList.remove("open");
+	seta[i].addEventListener("click", () => {
+		if (seta[i].classList.contains("open")) {
+			seta[i].classList.remove("open");
 			paragrafo.remove();
 		} else {
 			seta[i].classList.add("open");
@@ -14,7 +14,7 @@ for (let i = 0; i < seta.length; i++) {
 		}
 
 		seta.forEach((valor) => {
-			if (valor !== e.target) {
+			if (valor !== seta[i]) {
 				valor.classList.remove("open");
 			}
 		});
